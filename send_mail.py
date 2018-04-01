@@ -14,10 +14,10 @@ from os.path import basename
 
 #Usage: python send_an_email_with_attachment.py subject content (-f FILEPATH -r "RECIPIENT_1@gmail.com,RECIPIENT_2@gmail.com")
 
-fromaddr = "qqxxx@126.com"
-# fromaddr = "RASPBERRY_PI<qqxxx@126.com>"
-toaddr = "qqxxxxx@126.com"
-#toaddr = "xxxxxxxxxxxx@qq.com"
+fromaddr = "qq859755014@126.com"
+# fromaddr = "RASPBERRY_PI<qq859755014@126.com>"
+toaddr = "qq859755014@126.com"
+#toaddr = "724330356@qq.com"
 
 msg = MIMEMultipart()
  
@@ -60,7 +60,7 @@ print(("sending mail to: %s" % toaddr))
 try: 
 	server = smtplib.SMTP('smtp.126.com')
 	server.starttls()
-	server.login(fromaddr, "pa55w0rd")
+	server.login(fromaddr, "lrvxmouxswxizkgq")
 	text = msg.as_string()
 	#print(text)
 	server.sendmail(fromaddr, toaddr.split(','), text)
