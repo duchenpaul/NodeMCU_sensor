@@ -35,3 +35,7 @@ python3 mqtt_sensor_sub.py
 ```
 
 6. On NodeMCU, connect `D1 (GPIO5)` to `GND` to simulate the door closed status and disconnect to simulate the opened status. 
+
+
+# Other
+`esp8266_US-100_sensor_serial.ino` is not stable, it will stop publish status after a certain time
